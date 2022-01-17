@@ -6,6 +6,12 @@
 
 **Als nächstes geht man mit dem Terminal in das Verzeichnis shoppinglist und führt den Docker Befehl aus:**
 
+**Shoppinglist ohne Docker ausführen**
+
+- npm run start
+
+**Shoppinglist ohne Docker ausführen**
+
 - docker-compose up -d
 
 # **API-Endpoints**
