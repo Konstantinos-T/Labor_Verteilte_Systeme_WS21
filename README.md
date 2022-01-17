@@ -4,7 +4,7 @@
 
 - git clone https://gitlab.hs-esslingen.de/kotsit00/verteilte_systeme_ws21.git
 
-**Als nächstes geht man mit dem Terminal in das Verzeichnis shoppinglist und führt man den Docker Befehl aus:**
+**Als nächstes geht man mit dem Terminal in das Verzeichnis shoppinglist und führt den Docker Befehl aus:**
 
 - docker-compose up -d
 
