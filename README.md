@@ -10,9 +10,13 @@
 
 - npm run start
 
-**Shoppinglist ohne Docker ausführen**
+**Shoppinglist mit Docker ausführen**
 
 - docker-compose up -d
+
+**Check die laufenenden Container mit 
+
+-Docker ps
 
 # **API-Endpoints**
 
