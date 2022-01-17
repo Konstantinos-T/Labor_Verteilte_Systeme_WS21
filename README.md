@@ -35,7 +35,7 @@ Nach dieser Datenbank Konfiguration kann der Code in shoppinglist auch ausgefüh
 
 **Check die laufenenden Container mit**
 
--Docker ps
+- docker ps
 
 # **API-Endpoints**
 
