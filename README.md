@@ -1,10 +1,29 @@
+**Verwendet wird eine Postgres Datenbank diese sollte (wenn ohne docker) installiert und richtig aufgesetzt werden.**
+
+1. Postgres herunterladen und installieren
+2. Das Terminal aufrufen und folgende Befehle eingeben.
+3. **psql --version** checken ob diese installiert ist.
+4. **psql postgres** in die default Datenbank einloggen.
+5. postgres# **\conninfo** Verbindung und User herausfinden.
+6. postgres# **CREATE ROLE my_user WITH LOGIN PASSWORD 'my_password';** einen Benutzer mit Passwort erstellen.
+7. ALTER ROLE my_user CREATEDB;
+8. GRANT pg_read_all_data TO my_user;
+9. GRANT pg_write_all_data TO my_user;
+10. **postgres=# \q** postgres verlassen.
+11. **psql -d postgres -U my_user** einloggen.
+12. **CREATE DATABASE shoppinlistdb;** erstellt eine Datenbank mit dem Namen shoppinglistdb.
+13. **\c shoppinlistdb** Datenbank wechseln.
+14. **CREATE TABLE items (  ID SERIAL PRIMARY KEY,  name VARCHAR(30), quantity INT, complete BOOLEAN, created DATE );**
+
+Nach dieser Datenbank Konfiguration kann der Code in shoppinglist auch ausgeführt werden.
+
 # **Wie man diese Anwendung ausführt.**
 
-**Als erstes Repo klonen.**
+**Repo klonen.**
 
-- git clone https://gitlab.hs-esslingen.de/kotsit00/verteilte_systeme_ws21.git
+- git clone https://github.com/Konstantinos-T/Labor_Verteilte_Systeme_WS21.git
 
-**Als nächstes geht man mit dem Terminal in das Verzeichnis shoppinglist und führt den Docker Befehl aus:**
+**Mit dem Terminal in das Verzeichnis shoppinglist und Befehl ausführen:**
 
 **Shoppinglist ohne Docker ausführen**
 
@@ -14,7 +33,7 @@
 
 - docker-compose up -d
 
-**Check die laufenenden Container mit 
+**Check die laufenenden Container mit**
 
 -Docker ps
 
